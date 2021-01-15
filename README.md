@@ -8,8 +8,6 @@ This stores the default Ampify prettier config used across it's repositories.
 
 ## Updating
 
-Before raising a PR, remember to run `npm version ${patch | minor | major}`
+Before pushing to master remember to run `npm version ${patch | minor | major}`.
 
-## Publishing
-
-Once you change is in master, you should publish your changes using `npm publish`. You will write access to packages.
+A pre-push hook will auto-publish the package.
