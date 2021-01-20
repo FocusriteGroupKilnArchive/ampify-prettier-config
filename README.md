@@ -8,6 +8,6 @@ This stores the default Ampify prettier config used across it's repositories.
 
 ## Updating
 
-Before pushing to master remember to run `npm version ${patch | minor | major}`.
+To bump the client version, we use [npm version](https://docs.npmjs.com/cli/v6/commands/npm-version/). For basic usage run:
 
-A pre-push hook will auto-publish the package.
+- `npm version (patch|minor|major)` depending on the change. More options avaiable. When the change has been merged to `master`, the new version will be published.
