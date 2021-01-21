@@ -1,0 +1,25 @@
+version: 2.1
+
+jobs:
+  publish:
+    docker:
+      - image: cimg/node:12.18.4
+        auth:
+          username: ampify
+          password: $DOCKER_HUB_PASSWORD
+    steps:
+      - checkout
+      - run: node bump.js
+      - run: npm publish
+
+workflows:
+  publish:
+    jobs:
+      - publish:
+          context:
+            - NPM-CONFIG
+            - DOCKER_HUB
+          filters:
+            branches:
+              only:
+                - master

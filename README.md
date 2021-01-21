@@ -8,6 +8,4 @@ This stores the default Ampify prettier config used across it's repositories.
 
 ## Updating
 
-Before pushing to master remember to run `npm version ${patch | minor | major}`.
-
-A pre-push hook will auto-publish the package.
+When the change has been merged to `master`, a new version will be published based off the CI build number.

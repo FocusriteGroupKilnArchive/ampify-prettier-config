@@ -1,16 +1,12 @@
 {
-  "name": "@Focusrite-Novation/ampify-prettier-config",
+  "name": "@focusrite-novation/ampify-prettier-config",
   "version": "1.1.0",
   "description": "",
   "main": "index.json",
   "private": false,
   "scripts": {
+    "bump": "npx json -I -f package.json -e \"this.version='${VERSION}'\"",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "husky": {
-    "hooks": {
-      "pre-push": "if git-branch-is master; then npm publish; fi"
-    }
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com "
@@ -20,9 +16,5 @@
     "url": "git+https://github.com/Focusrite-Novation/ampify-prettier-config.git"
   },
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "git-branch-is": "^4.0.0",
-    "husky": "^4.3.7"
-  }
+  "license": "ISC"
 }
