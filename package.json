@@ -1,5 +1,5 @@
 {
-  "name": "@Focusrite-Novation/ampify-prettier-config",
+  "name": "@focusrite-novation/ampify-prettier-config",
   "version": "1.1.0",
   "description": "",
   "main": "index.json",
@@ -16,8 +16,5 @@
     "url": "git+https://github.com/Focusrite-Novation/ampify-prettier-config.git"
   },
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "json": "^10.0.0"
-  }
+  "license": "ISC"
 }
