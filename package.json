@@ -16,5 +16,9 @@
     "url": "git+https://github.com/Focusrite-Novation/ampify-prettier-config.git"
   },
   "author": "",
-  "license": "ISC"
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Focusrite-Novation/ampify-prettier-config/issues"
+  },
+  "homepage": "https://github.com/Focusrite-Novation/ampify-prettier-config#readme"
 }
